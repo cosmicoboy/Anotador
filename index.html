@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Orbitron&family=Stint+Ultra+Condensed&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+        <!-- Cuerpo anotador -->
+        <div id="anotador">
+            <!-- Sección agregar nota nueva -->
+            <div id="agregar_nota">
+                <h1 class="shadowing"> <strong>Anotador</strong> </h1>
+                <h2 class="shadowing"> Registrar las notas deseadas </h2>
+                <h3 class="shadowing"> Notas nuevas </h3>
+                <textarea name="nota_nueva" id="nota_nueva" placeholder="Aqui puede ingresar nueva nota"></textarea><br>
+                <input type="button" value="Agregar nota" id="boton_nota_nueva" class="botones" onclick="agregarNota()">
+            </div>
+    
+            <!-- Sección mostrar notas -->
+            <div id="mostrar_notas">
+                <h2 class="shadowing">Mostrar notas</h2>
+                <input type="button" value="Borrar notas" id="boton_borrar_notas" class="botones" onclick="borrarTodasNotas()">
+                <h3 class="shadowing">Notas guardadas</h3>
+                <!-- Aca se muestran las notas -->
+                <div id="notas_guardadas"></div>
+            </div>
+        </div>
+        <!-- Agregar archivo JS -->
+        <script src="./index.js"></script>
+    
+
+</body>
+
+</html>
